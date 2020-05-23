@@ -19,7 +19,11 @@ import com.google.firebase.storage.FirebaseStorage
 import com.vkiprono.dailyspend.models.User
 import kotlinx.android.synthetic.main.activity_signup.*
 import java.util.*
-import java.util.jar.Manifest
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 class SignupActivity : AppCompatActivity() {
 
@@ -37,6 +41,7 @@ class SignupActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         firebaseDatabase = FirebaseDatabase.getInstance()
         firebaseStorage = FirebaseStorage.getInstance()
+
     }
 
 
@@ -129,18 +134,18 @@ class SignupActivity : AppCompatActivity() {
 
 
         val username = etSignupName.text.toString()
-        val password = etSignupPassword.text.toString()
+        val pass = etSignupPassword.text.toString()
         val email = etSignupEmail.text.toString()
 
-        Log.d("SIGNUP ACTIVITY","THE DOWNLOAD URI INSIDE UPLOADDATATODATABASE IS======>$imageUri")
 
-        val user = User(username,password, imageUri, email)
+        val user = User(username, imageUri, email)
 
 
         dbRef.setValue(user).addOnCompleteListener {
             task ->
             if (task.isSuccessful){
-                Toast.makeText(applicationContext, "User data succesfully uploaded to the database", Toast.LENGTH_SHORT).show()
+                Log.d("SIGNUP ACTIVITY","User data succesfully uploaded to the database")
+               // Toast.makeText(applicationContext, "User data succesfully uploaded to the database", Toast.LENGTH_SHORT).show()
             }
         }.addOnFailureListener {
             exception ->

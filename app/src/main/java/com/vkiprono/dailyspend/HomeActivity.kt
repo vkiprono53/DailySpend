@@ -116,14 +116,18 @@ class HomeActivity : AppCompatActivity() {
 
             val inputItem: String = item!!.text.toString().trim()
             val inputDescription: String = description!!.text.toString().trim()
-            val inputAmount: String = amount!!.text.toString().trim()
+//            val inputAmount: String = amount!!.text.toString().trim()
+//
+//            val intAmount = inputAmount.toInt()
 
-            val intAmount = inputAmount.toInt()
+
+            val intAmount = amount.text.toString().toIntOrNull()
+          //  val intAmount = inputAmount != null
 
 
             Log.d("Item", "Type is======>$inputItem")
             Log.d("Description", "Note is======>$inputDescription")
-            Log.d("Amount", "Amount is======>$inputAmount")
+            Log.d("Amount", "Amount is======>$intAmount")
 
 
 
@@ -138,14 +142,7 @@ class HomeActivity : AppCompatActivity() {
                 return@setOnClickListener
 
             }
-/*
 
-            if (intAmount.isBlank() || intAmount.isEmpty()) {
-                amount.error = "Amount required"
-                return@setOnClickListener
-
-            }
-*/
 
             if (inputDescription.isEmpty() || inputDescription.isBlank()) {
                 description.error = "Description required"
@@ -221,7 +218,6 @@ class HomeActivity : AppCompatActivity() {
 
     fun itemsFromDatabase() {
 
-        val dbRef = FirebaseDatabase.getInstance().getReference("items")
 
         val adapter = GroupAdapter<GroupieViewHolder>()
 
@@ -403,14 +399,17 @@ class HomeActivity : AppCompatActivity() {
 
                 val inputUpdateItem: String = updateItem!!.text.toString().trim()
                 val inputUpdateDescription: String = updateDescription!!.text.toString().trim()
-                val inputUpdateAmount: String = updateAmount!!.text.toString().trim()
+//                val inputUpdateAmount: String = updateAmount!!.text.toString().trim()
+//
+//                val intAmount = inputUpdateAmount.toInt()
 
-                val intAmount = inputUpdateAmount.toInt()
+                val intAmount = updateAmount!!.text.toString().toIntOrNull()
+
 
 
                 Log.d("Item", "Type is======>$inputUpdateItem")
                 Log.d("Description", "Note is======>$inputUpdateDescription")
-                Log.d("Amount", "Amount is======>$inputUpdateAmount")
+                Log.d("Amount", "Amount is======>$intAmount")
 
 
                 if (inputUpdateItem.isEmpty() || inputUpdateItem.isBlank()) {
