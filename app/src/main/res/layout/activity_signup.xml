@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@android:color/holo_orange_dark"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/tvSignupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/white"
+        android:text="SIGN UP"
+        android:textSize="26sp"
+        android:textAlignment="center" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_signup"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="selectImage"
+        android:layout_below="@+id/tvSignupTitle"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_img"
+        app:civ_border_width="2dp"
+        />
+
+    <EditText
+        android:id="@+id/etSignupName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_margin="15dp"
+        android:hint="Enter your name"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/img_signup"
+        android:background="@drawable/bg_texfields"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/etSignupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_texfields"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etSignupName"
+        android:hint="Enter your email"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etSignupPassword"
+        android:ems="10"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:background="@drawable/bg_texfields"
+        android:hint="Enter your password"
+        android:layout_below="@id/etSignupEmail"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:text="SIGN UP"
+        android:onClick="signup"
+        android:textStyle="bold"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/etSignupPassword"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:onClick="signin"
+        android:layout_below="@id/btnSignup"
+        android:textStyle="italic"
+        android:text="Have an account? Login here" />
+
+</RelativeLayout>

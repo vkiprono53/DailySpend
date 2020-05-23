@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+
+    android:gravity="center"
+
+    tools:context=".SigninActivity">
+
+
+    <TextView
+        android:id="@+id/tvSigninTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="false"
+        android:fontFamily="serif"
+        android:text="DailySpend "
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+
+
+    <EditText
+        android:id="@+id/tvSigninEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_texfields"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/tvSigninTitle"
+        android:hint="Enter your email"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etSigninPassword"
+        android:ems="10"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_texfields"
+        android:hint="Enter your password"
+        android:layout_below="@id/tvSigninEmail"
+        android:textSize="22sp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:text="LOG IN"
+        android:onClick="signin"
+        android:textStyle="bold"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/etSigninPassword"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:onClick="signup"
+        android:layout_below="@id/btnSignin"
+        android:textStyle="italic"
+        android:text="Don't Have an account? Signup here" />
+
+</RelativeLayout>

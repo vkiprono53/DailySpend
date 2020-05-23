@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "82078277401",
+    "firebase_url": "https://dailyspend-53fac.firebaseio.com",
+    "project_id": "dailyspend-53fac",
+    "storage_bucket": "dailyspend-53fac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82078277401:android:72fb5298d9f88f0890ef88",
+        "android_client_info": {
+          "package_name": "com.vkiprono.dailyspend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82078277401-b2oc95bvp3m4ahgf54fq7meaf3okiot5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vkiprono.dailyspend",
+            "certificate_hash": "4b2f109cea5282be3399cb15278b5b503f33ca04"
+          }
+        },
+        {
+          "client_id": "82078277401-l86b95ggmm5sq39arm6d4gamj2cdh05e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMN1tYDOLtDG0L-TTGHHG8378ZVSZGP1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82078277401-l86b95ggmm5sq39arm6d4gamj2cdh05e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
