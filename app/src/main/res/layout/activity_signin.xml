@@ -34,7 +34,7 @@
     <EditText
         android:id="@+id/tvSigninEmail"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:layout_margin="15dp"
         android:padding="10dp"
@@ -42,24 +42,24 @@
         android:inputType="textEmailAddress"
         android:layout_below="@+id/tvSigninTitle"
         android:hint="Enter your email"
-        android:textSize="22sp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/etSigninPassword"
         android:ems="10"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:layout_width="match_parent"
         android:layout_margin="15dp"
         android:padding="10dp"
         android:background="@drawable/bg_texfields"
         android:hint="Enter your password"
         android:layout_below="@id/tvSigninEmail"
-        android:textSize="22sp"
+        android:textSize="18sp"
         android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnSignin"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:layout_width="match_parent"
         android:layout_margin="15dp"
         android:text="LOG IN"
@@ -68,7 +68,7 @@
         android:background="@drawable/bg_btn"
         android:textColor="@android:color/white"
         android:layout_below="@+id/etSigninPassword"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tvSignUp"

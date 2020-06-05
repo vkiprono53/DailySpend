@@ -134,7 +134,6 @@ class SignupActivity : AppCompatActivity() {
 
 
         val username = etSignupName.text.toString()
-        val pass = etSignupPassword.text.toString()
         val email = etSignupEmail.text.toString()
 
 

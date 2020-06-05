@@ -116,13 +116,9 @@ class HomeActivity : AppCompatActivity() {
 
             val inputItem: String = item!!.text.toString().trim()
             val inputDescription: String = description!!.text.toString().trim()
-//            val inputAmount: String = amount!!.text.toString().trim()
-//
-//            val intAmount = inputAmount.toInt()
 
 
             val intAmount = amount.text.toString().toIntOrNull()
-          //  val intAmount = inputAmount != null
 
 
             Log.d("Item", "Type is======>$inputItem")
@@ -359,7 +355,6 @@ class HomeActivity : AppCompatActivity() {
 
             Log.d("MAIN ACTIVITY", "BEGINNING TO EDIT ITEMS---->")
 
-        //    Log.d("HOME ACTIVITY", "THE KEY FOR THE SELECTED ITEM IS : $postKey")
 
 
             val alertDialogView = LayoutInflater.from(this@HomeActivity).inflate(R.layout.update_items_spend, null)
@@ -399,9 +394,6 @@ class HomeActivity : AppCompatActivity() {
 
                 val inputUpdateItem: String = updateItem!!.text.toString().trim()
                 val inputUpdateDescription: String = updateDescription!!.text.toString().trim()
-//                val inputUpdateAmount: String = updateAmount!!.text.toString().trim()
-//
-//                val intAmount = inputUpdateAmount.toInt()
 
                 val intAmount = updateAmount!!.text.toString().toIntOrNull()
 
@@ -423,14 +415,6 @@ class HomeActivity : AppCompatActivity() {
                     return@setOnClickListener
 
                 }
-/*
-
-            if (intAmount.isBlank() || intAmount.isEmpty()) {
-                amount.error = "Amount required"
-                return@setOnClickListener
-
-            }
-*/
 
                 if (inputUpdateDescription.isEmpty() || inputUpdateDescription.isBlank()) {
                     updateDescription.error = "Description required"
@@ -453,10 +437,6 @@ class HomeActivity : AppCompatActivity() {
 
                 Log.d("SAVING TO DB", "parsedDate DATE IS============>$parsedDate")
 
-           //     val itemRef = FirebaseDatabase.getInstance().getReference("items")
-
-             //   postKey = firebaseRef!!.key // FirebaseDatabase.getInstance().getReference("/items").key
-            //    Log.d("HOME ACTIVITY", "KEY HAPA FOR UPDATE====>$postKey")
 
                 val itemUpdateSpend = ItemSpend(inputUpdateItem, inputUpdateDescription, parsedDate.toString(), intAmount)
 

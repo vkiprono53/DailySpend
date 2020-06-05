@@ -80,7 +80,7 @@
                     android:id="@+id/tvDeleteItem"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
-                    android:drawableRight="@android:drawable/ic_delete"
+                    android:drawableRight="@android:drawable/ic_menu_delete"
                     />
 
                 <TextView

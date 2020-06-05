@@ -41,12 +41,12 @@
     <EditText
         android:id="@+id/etSignupName"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:layout_margin="15dp"
         android:hint="Enter your name"
         android:padding="10dp"
-        android:textSize="22sp"
+        android:textSize="18sp"
         android:layout_below="@+id/img_signup"
         android:background="@drawable/bg_texfields"
         android:inputType="textPersonName"
@@ -55,7 +55,7 @@
     <EditText
         android:id="@+id/etSignupEmail"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:layout_margin="15dp"
         android:padding="10dp"
@@ -63,16 +63,16 @@
         android:inputType="textEmailAddress"
         android:layout_below="@+id/etSignupName"
         android:hint="Enter your email"
-        android:textSize="22sp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/etSignupPassword"
         android:ems="10"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:layout_width="match_parent"
         android:layout_margin="15dp"
         android:padding="10dp"
-        android:textSize="22sp"
+        android:textSize="18sp"
         android:background="@drawable/bg_texfields"
         android:hint="Enter your password"
         android:layout_below="@id/etSignupEmail"
@@ -80,7 +80,7 @@
 
     <Button
         android:id="@+id/btnSignup"
-        android:layout_height="50dp"
+        android:layout_height="42dp"
         android:layout_width="match_parent"
         android:layout_margin="15dp"
         android:text="SIGN UP"
@@ -89,7 +89,7 @@
         android:background="@drawable/bg_btn"
         android:textColor="@android:color/white"
         android:layout_below="@+id/etSignupPassword"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tvSignUp"
